@@ -1,6 +1,6 @@
 # My Portfolio
 
-Please click the following to view [my portfolio.](https://meowatthemoon.github.io/github-portfolio/)
+Please click the following to view [my portfolio.](https://meowatthemoon.github.io/meowatthemoon/)
 
 # Credits
 
