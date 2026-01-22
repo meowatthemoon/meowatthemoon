@@ -1,0 +1,357 @@
+<!-- 
+  Hello 😊.
+
+  This template is designed and developed by Nisar Hassan Naqvi
+  for anyone to use for free or customize the way they like.
+
+  Github Repo: https://github.com/nisarhassan12/portfolio-template/
+  My Website: https://nisar.dev
+
+  For business & inquires, contact me => syednisarhassan12@gmail.com
+-->
+
+<!--
+  Follow the instructions written in comments to create your stunning portfolio
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    André Correia | Machine Learning Engineer.
+  </title>
+
+  <meta name = "description" content = "Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name = "keywords" content = "Put your name, skills and some coding keywords" />
+  <link rel = "stylesheet" href = "index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Job Experience</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Projects</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>André Correia</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>A Machine Learning Engineer with a Ph.D focused on Demonstration and Reinforcement Learning.</p>
+        <a href = "#contact" class = "btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class = "work" id = "work">
+      <div class = "row">
+        <h2>Job Experience</h2>
+        <div class = "work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class = "work__box">
+            <div class = "work__text">
+              <h3>DeepNeuronic</h3>
+              <p>
+                Software Engineer / ML Researcher 1 Year:
+              </p>
+              <ul class="work__list">
+                <li>Created a custom theft action dataset and benchmarked hundreds of Large Video Language Models (LVLMs) for theft detection in surveillance applications.</li>
+                <li>Researched state-of-the-art multi-camera tracking methods, implemented baseline algorithms, and combined them to enhance tracking robustness across multiple camera views.</li>
+                <li>Built a large-scale age and gender dataset combining public data, manual annotation, and synthetic data generated via generative models; trained and deployed an age and gender classification model.</li>
+                <li>Created and annotated a personal protective equipment (PPE) dataset and trained a computer vision detection model to identify compliance with required PPE in real-world scenarios.</li>
+                <li>Identified performance bottlenecks and refactored core components, improving code efficiency and quality while reducing dependency overhead; later documented the full codebase to improve maintainability and onboarding.</li>
+              </ul>
+
+              <div class = "work__links">
+                <a href = "https://deepneuronic.com/en/" target = "_blank" class = "link__text">
+                   <span>Visit Company</span>
+                </a>
+                <a href = "https://www.linkedin.com/company/deepneuronic/" title = "View Company's Linkedin" target = "_blank">
+                  <img src="./images/linkedin.svg" class = "work__code" alt = "Linkedin">
+                </a>
+              </div>
+            </div>
+            <div class = "work__image-box">
+              <a href = "https://deepneuronic.com/en/" target = "_blank">
+                <img src = "./images/DeepNeuronic.png" class = "work__image"/>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Clients ***** -->
+
+    <section class="client" id="clients">
+      <div class="row">
+        <h2>Projects and Publications</h2>
+        <div class="work__box">
+            <div class="work__text">
+              <h3>Survey of Demonstration Learning</h3>
+              <p>
+                Comprehensive survey of demonstration learning, covering problem formulation, learning methods, benchmarks, applications, and open research challenges. 
+              </p>
+
+              <div class="work__links">
+                <a href="https://www.sciencedirect.com/science/article/pii/S0921889024001969" class="link__text">
+                  Read the Paper <span>&rarr;</span>
+                </a>
+
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/survey.svg" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Hierarchical Decision Transformer</h3>
+              <p>
+                Advanced state-of-the-art sequence modeling in offline reinforcement learning using a hierarchical architecture. 
+              </p>
+              <ul class="work__list">
+                <li>Two transformers: high-level and low-level.</li>
+                <li>The high-level model proposes milestones states for the low-level model to reach.</li>
+                <li>The milestones guide it until task completion.</li>
+                <li>The proposed model does not require prior user interaction or task knowledge.</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://ieeexplore.ieee.org/document/10342230" class="link__text">
+                  Read the Paper <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/meowatthemoon/HDT">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>             
+            </div>
+            <video class="work__image" controls>
+                <source src="./images/hdt.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Decision Mamba Architectures</h3>
+              <p>
+                Further advanced the state-of-the-art sequence modeling in offline reinforcement learning by employing the Mamba architecture. 
+              </p>
+              <ul class="work__list">
+                <li>Two models: Decision Mamba and Hierarchical Decision Mamba.</li>
+                <li>Both models improve upon their transformer predecessors in terms of performance, size and inference speed.</li>
+                <li>Decision Mamba offers the best performing while only employing one model unlike its Hierarchical counter part.</li>
+                <li>Its evolutionary parameter provides the guidance signal required to outperform the transformer predecessors.</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://arxiv.org/abs/2405.07943" class="link__text">
+                  Read the Paper <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/meowatthemoon/Decisionmamba">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>             
+            </div>
+            <div class="work__image-box">
+              <img src="./images/dm_and_hdm.svg" class="work__image" alt="Project 3" />
+            </div>
+          </div>
+
+          <div class = "work__box">
+            <div class = "work__text">
+              <h3>DEFENDER</h3>
+              <p>
+                Algorithm to increase the safety of RL policies. 
+              </p>
+              <ul class="work__list">
+                <li>Use small sets of safe and unsafe demonstrations.</li>
+                <li>Compare the current trajectory with each demonstration.</li>
+                <li>Terminate unsafe trajectories and disincentivize the agent from selecting them.</li>
+                <li>The algorithm massively reduces the crash rate.</li>
+                <li>The increase in safety results in an increase in performance.</li>
+              </ul>
+              <div class = "work__links">
+                <a href = "https://doi.org/10.14428/esann/2023.ES2023-97" class = "link__text">
+                  Read the Paper <span>&rarr;</span>
+                </a>
+                <a href = "https://github.com/meowatthemoon/DEFENDER">
+                  <img src="./images/github.svg" class = "work__code" title = "View Source Code" alt = "GitHub">
+                </a>
+              </div>             
+            </div>
+            <div class = "work__image-box">
+              <img src = "./images/defender.jpg" class = "work__image" alt = "DEFENDER" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Multi-View Contrastive Learning from Demonstrations</h3>
+              <p>
+                Framework to learn task-relevant visual representations from demonstrations. 
+              </p>
+              <ul class="work__list">
+                <li>Use demonstrations recorded from different view-points.</li>
+                <li>Train an image encoder to learn view-point invariant features.</li>
+                <li>Use the features in place of the images to represent environment states and train an RL policy.</li>
+                <li>The RL policy can now perform with images captured from different view-points.</li>
+                <li>The principle can be extended to other types of information such as illumination and background objects.</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://ieeexplore.ieee.org/document/10023885" class="link__text">
+                  Read the Paper <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/meowatthemoon/CLfD">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>             
+            </div>
+            <div class="work__image-box">
+              <img src="./images/clfd.svg" class = "work__image" alt = "CLfD" />
+            </div>
+          </div>
+
+          <div class = "work__box">
+            <div class = "work__text">
+              <h3>Music to Dance as Language Translation</h3>
+              <p>
+                Transformer and Mamba based framework to translate music to dance. 
+              </p>
+              <ul class="work__list">
+                <li>Propose two Architectures: Mamba and Transformer based.</li>
+                <li>Ablation study on music features to use.</li>
+                <li>Propose an algorithm to learn to translate music features to dance poses.</li>
+                <li>Applied to a UR3 robotic arm.</li>
+                <li>The methods generalize to unseen choreographies.</li>
+              </ul>
+              <div class = "work__links">
+                <a href = "https://arxiv.org/abs/2403.15569" class = "link__text">
+                  Read the Paper <span>&rarr;</span>
+                </a>
+                <a href = "https://github.com/meowatthemoon/MDLT">
+                  <img src="./images/github.svg" class = "work__code" title = "View Source Code" alt = "GitHub">
+                </a>
+              </div>             
+            </div>
+            <div class = "work__image-box">
+
+              <video class="work__image" controls>
+                <source src="./images/mdlt.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+             I am a Machine Learning researcher and engineer with a PhD in Computer Science, specializing in demonstration and reinforcement learning, with publications in peer-reviewed venues. I have 1+ year experience of industry experience applying ML models in production environments.
+            </p>
+            <p>
+            I have experience developing and deploying computer vision and machine learning models in production, working with large-scale datasets, and evaluating state-of-the-art models across robotics and surveillance domains.
+            </p> 
+            <p>
+            I am particularly interested in ML engineering applied research roles.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="files/Andre_Correia_Resume.pdf" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          If you would like to discuss potential opportunities, collaborations, or have any questions about my work, feel free to get in touch.
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:andrerspcorreia@gmail.com" class="btn">andrerspcorreia@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+
+        <li class="footer__social-link-item">
+          <a href="https://github.com/meowatthemoon/" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/andrecorreia9/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <p>
+        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+      </p>
+      
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
