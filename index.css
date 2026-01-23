@@ -35,21 +35,21 @@
     --line-height-small: 1.2;
 
     --black: #000;
-    --pink: #ff3258;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
+    --orange: #FF3f00;
 
-
-    --container-max-width: 1180px;
-    --container-normal-width: 800px;
-    --container-medium-width: 700px; 
-    --container-small-width: 500px;
+    /* --- Adjusted container widths --- */
+    --container-max-width: 1400px; /* increased from 1180px */
+    --container-normal-width: 1000px; /* increased from 800px */
+    --container-medium-width: 850px;  /* increased from 700px */ 
+    --container-small-width: 600px;   /* increased from 500px */
 
     --gutter-huge: 12rem;
-    --gutter-medium: 6rem;
-    --gutter-normal: 3rem;
-    --gutter-small-1: 2.5rem;
-    --gutter-small: 2rem;
+    --gutter-medium: 3rem;  /* reduced from 6rem */
+    --gutter-normal: 2rem;  /* reduced from 3rem */
+    --gutter-small-1: 1.5rem;
+    --gutter-small: 1rem;
 
     --border-light: 1px solid rgb(36, 35, 35);
 }
@@ -111,7 +111,6 @@ section {
 }
 
 img {
-    object-fit: contain;
     max-width: 100%;
 }
 
@@ -150,7 +149,7 @@ h2::after {
     display: block;
     height: 2px;
     width: 10rem;
-    background: var(--pink);
+    background: var(--orange);
     margin: var(--gutter-small) 0;
 }
 
@@ -201,7 +200,7 @@ a {
 
 button:focus,
 a:focus {
-    outline: 2px solid var(--pink);
+    outline: 2px solid var(--orange);
 }
 
 body:not(.user-is-tabbing) button:focus,
@@ -210,7 +209,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .link:hover {
-    color: var(--pink);
+    color: var(--orange);
 }
 
 .btn {
@@ -219,7 +218,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
-    border: 1px solid  var(--pink);
+    border: 1px solid  var(--orange);
     font-weight: 400;
 }
 
@@ -243,20 +242,20 @@ body:not(.user-is-tabbing) a:focus {
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
-    background: var(--pink);
+    background: var(--orange);
 }
 
-.btn--pink {
-    background: var(--pink);
+.btn--orange {
+    background: var(--orange);
     transition: all 0.2s;
 }
 
-.btn--pink::after {
+.btn--orange::after {
     display: none;
 }
 
-.btn--pink:hover,
-.btn--pink:focus {
+.btn--orange:hover,
+.btn--orange:focus {
     background: transparent;
 }
 
@@ -266,7 +265,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: .6rem;
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid var(--pink);
+    border-bottom: 1px solid var(--orange);
 }
 
 .link__text::after {
@@ -289,7 +288,7 @@ body:not(.user-is-tabbing) a:focus {
 .link__text:hover::after,
 .link__text:focus:after {
     right: 0;
-    background: var(--pink);
+    background: var(--orange);
 }
 
 .link__text span {
@@ -308,7 +307,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
     height: 5.5rem;
     width: 5.5rem;
-    background-color: var(--pink);
+    background-color: var(--orange);
     border-radius: 50%;
     z-index: 10;
     visibility: hidden;
@@ -390,13 +389,13 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .nav__link:hover {
-    color: var(--pink);
+    color: var(--orange);
 }
 
 .nav__link:hover::after {
     right: 0;
     height: 2px;
-    background: var(--pink);
+    background: var(--orange);
 }
 
 /* --------------------------------------- */
@@ -497,12 +496,19 @@ body:not(.user-is-tabbing) a:focus {
     justify-content: center; /* horizontal center */
     align-items: center;     /* vertical center */
     margin-bottom: var(--gutter-normal);
+
+    border: 3px solid #FF3f00;
+    border-radius: 6px;
+}
+
+.work__image-box.no-border {
+    border: none;
 }
 
 @media(min-width: 901px) {
     .work__image-box {
-        flex: 0 0 50%;
-        margin-left: 4rem;
+        flex: 0 0 40%;
+        margin-left: auto;       
     }
 }
 
@@ -573,7 +579,7 @@ body:not(.user-is-tabbing) a:focus {
 
 @media(min-width: 901px) {
     .about__text {
-        flex: 0 0 50%;
+        flex: 0 0 40%;
     }
     
     .about__photo-container {
@@ -629,4 +635,19 @@ body:not(.user-is-tabbing) a:focus {
     .footer {
         padding: var(--gutter-medium) 0;
     } 
+}
+
+/* ----- Inline SVG icon for "Read the Paper" links ----- */
+.link__icon {
+    width: 1.6rem;          /* icon size */
+    height: 1.6rem;
+    margin-left: 0.6rem;    /* space from text */
+    vertical-align: middle; /* aligns with text baseline */
+    fill: var(--orange);    /* default color */
+    transition: fill 0.2s, transform 0.2s;
+}
+
+.link__text:hover .link__icon {
+    fill: var(--white);     /* icon color on hover */
+    transform: scale(1.2);  /* optional pop effect */
 }

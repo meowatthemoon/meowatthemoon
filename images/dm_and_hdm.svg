@@ -1,4 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="607.92" height="492" viewBox="0 0 607.92 492">
+
+<!-- White background -->
+  <rect x="0" y="0"
+        width="607.92"
+        height="492"
+        fill="#ffffff"/>
+
 <defs>
 <clipPath id="clip_1">
 <path transform="matrix(.24,0,0,.24,0,0)" d="M28.125 18.75H2506.25V2031.25H28.125Z" clip-rule="evenodd"/>

@@ -1,4 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="263.04" height="464.87998" viewBox="0 0 263.04 464.87998">
+
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="585.04" height="464.87998" viewBox="0 0 263.04 464.87998">
+
+<!-- White background -->
+  <rect x="-161" y="0"
+        width="585.04"
+        height="464.87998"
+        fill="#ffffff"/>
+
 <defs>
 <clipPath id="clip_1">
 <path transform="matrix(.24,0,0,.24,0,0)" d="M0 0H1095.8334V1936.4727H0Z" clip-rule="evenodd"/>
